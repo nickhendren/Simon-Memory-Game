@@ -1,3 +1,7 @@
+body {
+    margin: 0 auto;
+}
+
 h1 {
     font-family: impact;
     text-align: center;
@@ -105,6 +109,7 @@ h3 {
     font-family: impact;
     font-size: 35px;
 }
+
 #player1 {
     float: left;
     margin-left: 200px;
@@ -112,7 +117,8 @@ h3 {
 
 #player2 {
     float: right;
-    margin-right: 300px;
+    margin-right: 250px;
+    padding-left: 20px;
 }
 
 img {
@@ -122,3 +128,7 @@ img {
     margin-top: 32px;
     margin-left: 20px;
  }
+
+.player2-hearts {
+    float: right;
+}
