@@ -123,11 +123,19 @@ h3 {
     margin-top: 0px;
 }
 
+#round {
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 90px;
+    float: none;
+}
+
 #player2 {
     float: right;
     margin-right: 250px;
     padding-left: 20px;
     margin-top: 0px;
+    text-align: right;
 }
 
 img {
