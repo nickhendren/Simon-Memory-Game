@@ -6,7 +6,7 @@ body {
 h1 {
     font-family: impact;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     text-shadow: 2px 2px 2px darkgrey;
 }
 
@@ -17,7 +17,7 @@ h1 {
     margin-left: 455px;
 }
 
-#green-panel {
+#green {
     height: 250px;
     width: 248px;
     background-color: green;
@@ -27,7 +27,7 @@ h1 {
     box-shadow: 2px 2px 2px black;
 }
 
-#yellow-panel {
+#yellow {
     height: 250px;
     width: 245px;
     background-color: yellow;
@@ -37,7 +37,7 @@ h1 {
     box-shadow: 5px 5px 5px black;
 }
 
-#red-panel {
+#red {
     height:  250px;
     width: 245px;
     background-color: red;
@@ -47,7 +47,7 @@ h1 {
     box-shadow: 5px 5px 5px black;
 }
 
-#blue-panel {
+#blue {
     height: 250px;
     width: 245px;
     background-color: blue;
