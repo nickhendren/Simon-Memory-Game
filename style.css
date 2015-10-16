@@ -17,6 +17,9 @@ h1 {
     margin-left: 455px;
 }
 
+.game-pieces {
+    opacity: 0.6;
+}
 #green {
     height: 250px;
     width: 248px;
