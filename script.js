@@ -1,4 +1,3 @@
-$(function() {
     var Simon = {
     	sequence: [], //this is an open array where the numbers randomly selected by the computer will be stored
     	player1copy: [], //this is where player 1's answers will be stored
@@ -24,7 +23,7 @@ $(function() {
     	},
 
         initPadHandler: function(){
-    		that=this;
+    		var that = this; //that refers to the Simon object
     		$(".game-pieces").on("click", function() {
     			if(that.active === true) {
     				var pad = parseInt($(this).data("pad"), 10);
@@ -50,7 +49,7 @@ $(function() {
             this.player2copy.length = 0;
     		this.pos=0;
     		this.turn=0;
-    		this.active=true;
+    		this.active = true;
     		this.startGame(this.round); //randomize pad with the correct amount of numbers for this level
     		this.displaySequence(); //show the user the sequence
     	},
@@ -64,12 +63,11 @@ $(function() {
     				element.stop().animate({opacity: '0.6'}, 200);
     				}
     			});	//end animation
-    		}
-    		if (times > 0) { //call the flash function again until done the correct amount of times
-    			setTimeout(function() {
+
+				times -= 1;	//times - 1 for each time it's called
+				setTimeout(function() {
     				that.flash(element, times, speed, pad);
     			}, speed);
-    			times -= 1;	//times - 1 for each time it's called
     		}
     	},
 
@@ -95,7 +93,7 @@ $(function() {
         },
 
         checkSequence: function(pad) { //checker function to test if the pad the user pressed was next in the sequence
-            that = this;
+            var that = this;
             if(pad !== this.sequence[this.turn]){ //if not correct
                 this.incorrectSequence();
                 } else{ //if correct
@@ -115,9 +113,13 @@ $(function() {
 
         displaySequence: function() { //display the generated sequence to the user
             var that = this;
+			console.log("from displaySequence");
+			console.log("this.sequence is", this.sequence);
+
             $.each(this.sequence, function(index, val) { //iterate over each value in the generated array
-                setTimeout(function() {
-                    that.flash($(that.shape + val), 1, 300, val);
+				console.log(val);
+				setTimeout(function() {
+                    that.flash($('.' + val), 1, 300, val);
                 }, 500 * index); // multiply timeout by how many items in the array so that they play sequentially and multiply by the difficulty modifier
             });
         },
@@ -160,4 +162,3 @@ $(function() {
     		Simon.init();
     	});
     });
-})
