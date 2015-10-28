@@ -3,15 +3,20 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="script.js"></script>
         <title>Simon Memory Game</title>
     </head>
     <body>
         <h1>Simon Memory Game</h1>
+
+        <!-- This div contains all of the game pieces for the Simon board -->
         <div class="game-panels">
-            <div id="green-panel"></div>
-            <div id="red-panel"></div>
-            <div id="blue-panel"></div>
-            <div id="yellow-panel"></div>
+            <div class="game-pieces 1" id="green" data-pad="1"></div>
+            <div class="game-pieces 2" id="red" data-pad="2"></div>
+            <div class="game-pieces 3" id="blue" data-pad="3"></div>
+            <div class="game-pieces 4" id="yellow" data-pad="4"></div>
             <div id="black-center"></div>
             <div id="black-vertical-top"></div>
             <div id="black-vertical-bottom"></div>
@@ -19,15 +24,27 @@
             <div id="black-horizontal-left"></div>
             <h2>SIMON</h2>
         </div>
+
         <h3 id="player1">Player 1</h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png">
+
+        <!-- Player 1 lives -->
+        <!-- <img class="player1-hearts" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png">
+        <img class="player1-hearts" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png">
+        <img class="player1-hearts" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png"> -->
+
+        <h3 id="round">Round: <span data-round="0">0</span></h3>
+
         <h3 id="player2">Player 2</h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
-        </script>
+
+        <!-- Player 2 lives -->
+        <!-- <img class="player2-hearts" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png">
+        <img class="player2-hearts" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png">
+        <img class="player2-hearts" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png"><br> -->
+
+        <!-- These are the buttons that are located towards the bottom of the screen -->
+        <!-- <button class="button-positioning" type="button">QUIT</button> -->
+        <button class="start" type="button">Start</button>
+        <!-- <button class="button-positioning" type="button">HELP</button> -->
+
     </body>
 </html>

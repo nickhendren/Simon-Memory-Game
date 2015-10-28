@@ -1,7 +1,13 @@
+body {
+    margin: 0 auto;
+    background-image: url(http://i.stack.imgur.com/pMAiU.jpg);
+}
+
 h1 {
     font-family: impact;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px darkgrey;
 }
 
 .game-panels {
@@ -11,40 +17,47 @@ h1 {
     margin-left: 455px;
 }
 
-#green-panel {
+.game-pieces {
+    opacity: 0.6;
+}
+#green {
     height: 250px;
-    width: 250px;
+    width: 248px;
     background-color: green;
     display: inline-block;
     float: left;
     border-top-left-radius: 250px;
+    box-shadow: 2px 2px 2px black;
 }
 
-#yellow-panel {
+#yellow {
     height: 250px;
-    width: 250px;
+    width: 245px;
     background-color: yellow;
     display: inline-block;
     float: left;
     border-bottom-left-radius: 250px;
+    box-shadow: 5px 5px 5px black;
 }
 
-#red-panel {
+#red {
     height:  250px;
-    width: 250px;
+    width: 245px;
     background-color: red;
     display: inline-block;
     float: right;
     border-top-right-radius: 250px;
+    box-shadow: 5px 5px 5px black;
 }
 
-#blue-panel {
+#blue {
     height: 250px;
-    width: 250px;
-    background-color: lightblue;
+    width: 245px;
+    background-color: blue;
     display: inline-block;
     float: right;
     border-bottom-right-radius: 250px;
+    box-shadow: 5px 5px 5px black;
 }
 
  #black-center {
@@ -66,7 +79,7 @@ h1 {
 }
 
 #black-vertical-bottom {
-    height: 130px;
+    height: 135px;
     width: 25px;
     background-color: black;
     margin-left: 240px;
@@ -104,21 +117,53 @@ h3 {
     display: inline;
     font-family: impact;
     font-size: 35px;
+    text-shadow: 2px 2px 2px darkgrey;
 }
+
 #player1 {
     float: left;
-    margin-left: 200px;
+    margin-left: 220px;
+    margin-top: 0px;
+}
+
+#round {
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 90px;
+    float: none;
 }
 
 #player2 {
     float: right;
-    margin-right: 300px;
+    margin-right: 250px;
+    padding-left: 20px;
+    margin-top: 0px;
+    text-align: right;
 }
 
 img {
     height: 50px;
     display: inline;
     position: relative;
-    margin-top: 32px;
     margin-left: 20px;
- }
+    margin-bottom: 25px;
+}
+
+.player2-hearts {
+    float: right;
+}
+
+button {
+    margin-left: 200px;
+    font-size: 30px;
+    font-family: impact;
+    text-shadow: 2px 2px 2px darkgrey;
+    box-shadow: 5px 5px 5px black;
+}
+
+.button-positioning {
+    float: left;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+}
