@@ -15,6 +15,9 @@ h1 {
     width: 500px;
     position: relative;
     margin-left: 455px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .game-pieces {
@@ -153,8 +156,10 @@ img {
     float: right;
 }
 
-button {
-    margin-left: 665px;
+.start {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     font-size: 30px;
     font-family: impact;
     text-shadow: 2px 2px 2px darkgrey;
@@ -162,8 +167,8 @@ button {
 }
 
 .button-positioning {
-    float: left;
-    display: inline-block;
+    /*float: left;*/
+    /*display: inline-block;*/
     height: 50px;
     width: 200px;
 }
