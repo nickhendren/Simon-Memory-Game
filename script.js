@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 var Simon = {
+=======
+    var Simon = {
+>>>>>>> 99a7299c44974ad97d935e0a0779302ae24376a8
     	sequence: [], //this is an open array where the numbers randomly selected by the computer will be stored
     	player1copy: [], //this is where player 1's answers will be stored
         player2copy: [], //this is where player 2's answers will be stored
